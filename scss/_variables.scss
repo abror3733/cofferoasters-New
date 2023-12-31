@@ -1,0 +1,33 @@
+@mixin display(){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@mixin change-color($change-color: #333D4B){
+  color: $change-color;
+}
+@mixin site-title($title-color:#FEFCF7){
+  color: $title-color;
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Fraunces 9pt";
+}
+@mixin content-text($content-text:#FEFCF7){
+  color: $content-text;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+@mixin link($link-color:#FEFCF7){
+  color: $link-color;
+  display: inline-block;
+  font-family: "Fraunces 9pt";
+  border-radius: 6px;
+  background: #0E8784;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+}

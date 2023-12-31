@@ -1,0 +1,58 @@
+.header{
+  @include display();
+  padding: 44px 0;
+}
+.header__logo-link{
+  display: inline-block;
+  transition: all 0.3s;
+
+  &:hover{
+    opacity: 80%;
+  }
+  &:active{
+    opacity: 55%;
+  }
+}
+.hamburger-btn{
+  display: none;
+  border: none;
+  background: transparent;
+}
+// Tablet style start 
+@media only screen and (max-width:768px){
+  .header{
+    padding: 40px 0;
+  }
+}
+
+  @media only screen and (max-width:580px){
+    .header{
+      padding: 35px 0;
+    }
+    .navbar{
+      display: none;
+    }
+    .hamburger-btn{
+      display: block;
+      width: 19px;
+      height: 18px;
+    }
+}
+
+// Tablet style end 
+
+// Mobile style start 
+ @media only screen and (max-width:375px){
+  .header{
+    padding: 32px 0;
+  }
+  .header__logo-img{
+    width: 163px;
+    height: 18px;
+  }
+  .hamburger-btn{
+    width: 16px;
+    height: 15px;
+  }
+ }
+// Mobile style end 

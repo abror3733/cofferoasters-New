@@ -1,0 +1,28 @@
+
+.navbar__list{
+  @include display();
+}
+.navbar__item + .navbar__item{
+  margin-left: 33px;
+}
+
+.navbar__item-link{
+  @include change-color( #83888F);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; 
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  transition: all 0.3s;
+
+  &:hover{
+    color: #333D4B; ;
+   }
+   &:active{
+    color: black;
+    padding-bottom: 4px;
+    border-bottom: 1.6px solid black;
+   }
+}

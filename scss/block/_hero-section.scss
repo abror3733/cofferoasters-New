@@ -1,0 +1,273 @@
+.hero{
+  background-image: url("../images/hero-desktop-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 137px 0 60px 87px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.hero__content{
+  width: 493px;
+}
+.hero__content-title{
+  @include site-title();
+  font-size: 72px;
+  line-height: 72px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.hero__content-wrapper{
+  width: 400px;
+  margin-bottom: 56px;
+}
+.hero__content-text{
+  @include content-text();
+  font-size: 16px;
+  line-height: 26px;
+}
+.hero__content-link{
+  @include link();
+  width: 217px;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 15px 31px 16px;
+  transition: all 0.3s;
+
+
+  &:hover{
+    background: #66D2CF;
+    color: #FEFCF7;
+  }
+  &:active{
+    background: #E2DEDB;
+  }
+}
+
+// Tablet style start 
+@media only screen and (max-width:1225px){
+  .hero{
+    padding: 97px 0 42px 67px;
+      border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+  }
+  .hero__content-title{
+    font-size: 62px;
+    line-height: 72px;
+  }
+   
+}
+@media only screen and (max-width:1091px){
+  .hero{
+    padding: 57px 0 51px 47px;
+      border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+
+  }
+  .hero__content{
+    width: 360px;
+  }
+  .hero__content-title{
+    font-size: 52px;
+    line-height: 62px;
+    margin-bottom: 22px;
+  }
+  .hero__content-wrapper{
+    width: 350px;
+    margin-bottom: 46px;
+  }
+  .hero__content-text{
+    font-size: 13px;
+    line-height: 22px;
+  }
+   
+}
+@media only screen and (max-width:877px){
+  .hero{
+    padding: 37px 0 47px 40px;
+      border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+  }
+  .hero__content{
+    width: 350px;
+  }
+  .hero__content-title{
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 22px;
+  }
+  .hero__content-wrapper{
+    width: 317px;
+    margin-bottom: 36px;
+  }
+  .hero__content-text{
+    font-size: 10px;
+    line-height: 19px;
+  }
+   
+}
+@media only screen and (max-width:815px){
+  .hero{
+    background-image: url("../images/hero-Tablet-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 105px 0 123px 50px;
+  }
+  .hero__content{
+    width: 350px;
+  }
+  .hero__content-title{
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .hero__content-wrapper{
+    width: 385px;
+    margin-bottom: 40px;
+  }
+  .hero__content-text{
+    font-size: 15px;
+    line-height: 25px;
+  }
+   
+
+
+}
+@media only screen and (max-width:686px){
+  .hero{
+    padding: 90px 0 65px 40px;
+  }
+
+  .hero__content-title{
+    font-size: 46px;
+    line-height: 46px;
+    margin-bottom: 20px;
+  }
+  .hero__content-wrapper{
+    width: 385px;
+    margin-bottom: 35px;
+  }
+  .hero__content-text{
+    font-size: 13.5px;
+    line-height: 23px;
+  }
+   
+
+
+}
+@media only screen and (max-width:616px){
+  .hero{
+    padding: 70px 0 64px 40px;
+  }
+  .hero__content{
+    width: 350px;
+  }
+  .hero__content-title{
+    font-size: 41px;
+    line-height: 41px;
+    margin-bottom: 18px;
+  }
+  .hero__content-wrapper{
+    width: 317px;
+    margin-bottom: 33px;
+  }
+  .hero__content-text{
+    font-size: 11.5px;
+    line-height: 21px;
+    letter-spacing: 1px;
+  }
+
+}
+@media only screen and (max-width:580px){
+  .hero{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 70px 0 64px 40px;
+  }
+  .hero__content{
+    width: 320px;
+  }
+  .hero__content-title{
+    font-size:37px;
+    line-height: 37px;
+    margin-bottom: 18px;
+  }
+  .hero__content-wrapper{
+    width: 317px;
+    margin-bottom: 27px;
+  }
+
+
+}
+@media only screen and (max-width:511px){
+  .hero{
+      border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+    padding: 30px 0 30px 30px;
+  }
+}
+// Tablet style end 
+// Mobile style start 
+@media only screen and (max-width:432px){
+  .hero{
+    background-image: url("../../images/hero-mobile-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 100px 0px;
+    border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+  }
+  .hero__content{
+    width: 100%;
+
+    text-align: center;
+  
+  }
+  .hero__content-title{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    padding: 0 10px;
+  }
+  .hero__content-wrapper{
+    width: 100%;
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .hero__content-link{
+    text-align: center;
+  
+  }
+
+
+}
+@media only screen and (max-width:344px){
+.hero{
+  background-size: cover;
+  padding: 70px 0px;
+  border-bottom-left-radius: 10px;
+}
+
+}
+@media only screen and (max-width:310px){
+.hero{
+  background-size: 100%;
+  padding: 30px 0px 51px 0px;
+}
+.hero__content-title{
+   padding: 0px 5px;
+}
+.hero__content-wrapper{
+  padding: 0px 15px;
+}
+
+  .hero__content{
+  padding: 0;
+}
+  .hero__content-link{
+  width: auto;
+  padding: 15px 15px;
+}
+}
+// Mobile style end 

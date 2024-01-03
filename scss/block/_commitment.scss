@@ -73,7 +73,7 @@
       padding: 30px 30px 0 30px;
     }
     .commitment__img{
-      width: auto;
+      width: 100%;
     }
   }
 
@@ -81,13 +81,13 @@
 // Moblie style start 
 @media only screen and ( max-width:375px){
   .commitment-section{
-    padding: 40px 0px ;
+    padding: 0px 0px 40px ;
   }
   .commitment__content{
     padding: 30px 24px 30px;
   }
   .commitment__img{
-    padding: 0 20px;
+
     background-size: 100%;
   }
 }
